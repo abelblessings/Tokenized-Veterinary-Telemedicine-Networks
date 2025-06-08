@@ -1,0 +1,24 @@
+[project]
+name = 'Tokenized-Veterinary-Telemedicine-Networks'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.diagnostic-support]
+path = 'contracts/diagnostic-support.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.follow-up-coordination]
+path = 'contracts/follow-up-coordination.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
